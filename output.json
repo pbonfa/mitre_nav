@@ -1,0 +1,191 @@
+{
+    "name": "Incident",
+    "versions": {
+        "attack": "14",
+        "navigator": "4.9.4",
+        "layer": "4.3"
+    },
+    "domain": "enterprise-attack",
+    "description": "",
+    "filters": {
+        "platforms": [
+            "Linux",
+            "macOS",
+            "Windows",
+            "Azure AD",
+            "Office 365",
+            "SaaS",
+            "IaaS",
+            "Google Workspace",
+            "PRE",
+            "Network",
+            "Containers"
+        ]
+    },
+    "sorting": 0,
+    "layout": {
+        "layout": "side",
+        "aggregateFunction": "average",
+        "showID": true,
+        "showName": true,
+        "showAggregateScores": false,
+        "countUnscored": false
+    },
+    "hideDisabled": false,
+    "techniques": [
+        {
+            "techniqueID": "T1598",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 1
+        },
+        {
+            "techniqueID": "T1598.001",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 1
+        },
+        {
+            "techniqueID": "T1595.001",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 3
+        },
+        {
+            "techniqueID": "T1595.002",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 3
+        },
+        {
+            "techniqueID": "T1595.003",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 3
+        },
+        {
+            "techniqueID": "T1592",
+            "tactic": [
+                "reconnaissance"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 1
+        },
+        {
+            "techniqueID": "T1584",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.001",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.002",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.003",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.004",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.005",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        },
+        {
+            "techniqueID": "T1584.006",
+            "tactic": [
+                "resource-development"
+            ],
+            "enabled": true,
+            "comment": "Darktrace",
+            "showSubtechniques": false,
+            "score": 6
+        }
+    ],
+    "gradient": {
+        "colors": [
+            "#ffffff",
+            "#66b1ff",
+            "#096ed7"
+        ],
+        "minValue": 0,
+        "maxValue": 10
+    },
+    "legendItems": [
+        {
+            "label": "No available detections",
+            "color": "#ffffff"
+        },
+        {
+            "label": "Some detections available",
+            "color": "#66b1ff"
+        }
+    ],
+    "metadata": [],
+    "showTacticRowBackground": true,
+    "tacticRowBackground": "#dddddd",
+    "selectTechniquesAcrossTactics": true,
+    "selectSubtechniquesWithParent": true
+}

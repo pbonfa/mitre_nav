@@ -56,20 +56,11 @@ class TechniqueResult:
         self.detections = detections or []
         self.score = 0
 
-    def add_detection(self, url: str, detection: str) -> None:
+    def add_detection(self, url: str, detection: str) -> None:4
         self.detections.append((url, detection))
 
-    def calculate_score(self, results: List['TechniqueResult']) -> None:
-        # Controllo se technique_id è del formato Txxxx
-        if re.match(r'^T\d{4}$', self.technique_id):
-            self.score = 1
-        else:
-            # Controllo il numero di occorrenze di Txxxx.yyy
-            txxxx_pattern = re.match(r'^T\d{4}', self.technique_id).group()
-            count = sum(1 for result in results if result.technique_id.startswith(txxxx_pattern))
-            self.score = count if count > 0 else 1
 
-    @property
+    property
     def as_navigator(self) -> Iterable[Dict]:
         for tactic in self.tactics:
             if not self.detections:  # Check if detections list is empty
@@ -293,6 +284,8 @@ if __name__ == "__main__":
 
     technique_ids: Set[str] = set()
     detection_count: int = 0
+
+
 
     if args.technique_ids:
         technique_ids.update(AttackDB.unique_ids(args.technique_ids))

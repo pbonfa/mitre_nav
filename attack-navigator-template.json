@@ -1,9 +1,9 @@
 {
 	"name": "Incident",
 	"versions": {
-		"attack": "9",
-		"navigator": "4.3",
-		"layer": "4.2"
+		"attack": "14",
+		"navigator": "4.9.4",
+		"layer": "4.3"
 	},
 	"domain": "enterprise-attack",
 	"description": "",
@@ -26,9 +26,9 @@
 	"layout": {
 		"layout": "side",
 		"aggregateFunction": "average",
-		"showID": false,
+		"showID": true,
 		"showName": true,
-		"showAggregateScores": false,
+		"showAggregateScores": false, 
 		"countUnscored": false
 	},
 	"hideDisabled": false,
@@ -40,7 +40,7 @@
 			"#096ed7"
 		],
 		"minValue": 0,
-		"maxValue": 1
+		"maxValue": 10
 	},
 	"legendItems": [
         {"label": "No available detections", "color": "#ffffff"}, 
